@@ -6,6 +6,7 @@ import router from './routes/users.routes.js';
 import classRouter from './routes/classes.routes.js';
 import enrollmentRouter from './routes/enrollments.routes.js';
 import coursesRouter from './routes/courses.routes.js';
+import withdrawalRouter from './routes/withdrawals.routes.js';
 
 dotenv.config();
 
@@ -30,6 +31,7 @@ app.use('/api/users', router);
 app.use('/api/classes', classRouter);
 app.use('/api/enrollments', enrollmentRouter);
 app.use('/api/courses', coursesRouter);
+app.use('/api/withdrawals', withdrawalRouter);
 
 // Basic route for home page
 app.get('/', (req, res) => {
